@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-
 public class GetUserOrderTest {
     private final UserDataGenerator uGen = new UserDataGenerator();
     private final User user = new User(uGen.genEmail(), uGen.genPassword(), uGen.genName());
