@@ -15,7 +15,6 @@ public class CreateUserTest {
     private final User user = new User(uGen.genEmail(), uGen.genPassword(), uGen.genName());
     private final UserClient userClient = new UserClient();
 
-
     @Test
     @DisplayName("Создание пользователя")
     @Description("Проверяем код ответа и поле success")
@@ -87,6 +86,4 @@ public class CreateUserTest {
     public void clearUserData() throws InterruptedException {
         userClient.deleteUser(userClient.getAccessToken());
     }
-
 }
-
